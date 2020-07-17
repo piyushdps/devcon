@@ -7,7 +7,7 @@ const connectDB = require('./config/db');
 //connect database
 connectDB();
 //Init middleware
-app.use(bodyParser.json({ extended: false }));
+// app.use(bodyParser.json({ extended: false }));
 app.use(express.json({ extended: false }));
 
 app.get('/', (req, res) => res.send('API Running'));
